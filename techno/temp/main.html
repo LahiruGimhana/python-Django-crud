@@ -17,8 +17,11 @@
       {% for i in database%}
       <tr>
         <td>{{i.name}}</td>
+        <td><a href="{% url 'post' i.id %}">views</a></td>
+        <td><a href="{% url 'update' i.id %}">update</a></td>
+        <td><a href="{% url 'delete' i.id %}">delete</a></td>
+        {% endfor %}
       </tr>
-      {% endfor %}
     </table>
     <br /><br />
     {% endblock content %} {% include 'footer.html' %}

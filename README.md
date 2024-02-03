@@ -37,3 +37,9 @@ python manage.py migrate
 # Register your models here.
 from . models import PostTable
 admin.site.register(PostTable)
+
+
+localhost:3000/admin
+
+username: gimhana
+password: gimhana

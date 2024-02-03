@@ -1,0 +1,10 @@
+{% extends "home.html" %} {% block content %}
+
+<h1>are you sure to delee this post</h1>
+<form method="post" action="">
+    {%csrf_token %}
+    <a href="{% url 'posts' %}" >go back</a>
+    <input type="submit" value="delete" />
+</form>
+
+{% endblock content %}
